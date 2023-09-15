@@ -1,0 +1,166 @@
+@media screen and (max-width:900px){
+  .inneright #content{
+    width: 100%;
+  }
+  #pages #pages-card-content{
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media screen and (max-width: 455px){
+  #pages #pages-card-content{
+    grid-template-columns: repeat(1, 1fr);
+   }
+}
+@media (max-width: 768px) {
+
+  #section-introduction{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+  }
+  #section-introduction .inneright{
+    
+  width: 100%;
+}
+  #section-introduction article{
+    display: none;
+  }
+  header{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+#atalhos p{
+  padding: .3rem
+}
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    gap: 0.5em;
+  }
+
+  #hamb {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamb::after,
+  #hamb::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: 0.3s;
+  } 
+
+  .navbar-menu{
+    display: none;
+  }
+
+
+  .header-navbar.active > .navbar-menu{
+    position: absolute;
+    width: 100%;
+    top: 8rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+    height: 0;
+    transition: 0.6s;
+    z-index: 99;
+    visibility: hidden;
+    overflow-y: hidden;
+    background-color: var(--color-primaryColor);
+    transition: 1s;
+  }
+
+  .header-navbar.active .navbar-menu {
+    visibility: visible;
+    overflow-y: auto;
+    height: 40vh;
+  }
+
+  .header-navbar.active #hamb {
+    border-top-color: transparent;
+  }
+  .header-navbar.active #hamb::before {
+    transform: rotate(135deg);
+  }
+  .header-navbar.active #hamb::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+@media screen and (max-width:556px)
+{
+  .card-component{
+    border-radius: 30px;
+  }
+  #atalhos{
+    gap: 5rem;  
+  }
+}
+
+
+ 
+
+}
+@media screen and (max-width:400px){
+  .card-component{
+    border-radius: 30px;
+    padding: .8rem;  
+  }
+
+  #Office{
+    font-size: 2.1rem;
+  }
+  #section-introduction #content-tittle h2{
+    font-size: 1.6rem;
+    }
+  #section-introduction #content-tittle h1{
+    font-size: 2rem;
+    }
+  #atalhos .card-content p{
+    margin: 0;
+  }
+
+}
+
+/*            COMUM.CSS / FERRAMENTAS                         */
+
+@media screen and (max-width: 420px)
+{
+  .landing-page-wrapper #text h1{
+    font-size: 2rem;
+  }
+  .landing-page-wrapper #text{
+    width: 90%;
+  }
+
+  #ferramentas-text-content{
+    width: 90%;
+  }
+  #ferramentas h1{
+    font-size: 2rem;
+    
+  }
+  #ferramentas strong{
+    font-size: 1rem;
+
+  }
+  #ferramentas p{
+    font-size: 1.1rem;
+
+  }
+}
